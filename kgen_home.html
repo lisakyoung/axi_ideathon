@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGeN Odyssey - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: #a855f7;
+            border-radius: 3px;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), 
+                        url('/api/placeholder/1200/600') center/cover no-repeat;
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .game-card {
+            transition: all 0.3s ease;
+        }
+        
+        .game-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(168, 85, 247, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="bg-gray-900 border-b border-gray-800 fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <svg class="h-10 w-10 text-purple-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="ml-3">
+                            <span class="text-white text-xl font-bold">KGeN</span>
+                            <span class="text-purple-400 text-xl font-bold">Odyssey</span>
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="index.html" class="nav-item active text-white text-lg font-medium">Home</a>
+                    <a href="games.html" class="nav-item text-gray-300 hover:text-white text-lg font-medium transition duration-300">Games</a>
+                    <a href="community.html" class="nav-item text-gray-300 hover:text-white text-lg font-medium transition duration-300">Community</a>
+                    <a href="my-odyssey.html" class="nav-item text-gray-300 hover:text-white text-lg font-medium transition duration-300">My Odyssey</a>
+                    <a href="marketplace.html" class="nav-item text-gray-300 hover:text-white text-lg font-medium transition duration-300">Marketplace</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md transition duration-300">Sign In</button>
+                    <button class="md:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">Your Gaming Journey Becomes Your Destiny</h1>
+                <p class="text-xl text-gray-300 mb-8">Discover a revolutionary platform where your unique gaming skills evolve, create real opportunities, and connect you with a global community.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white text-lg font-medium px-8 py-3 rounded-md transition duration-300">Explore Your Gaming DNA</button>
+                    <button class="bg-transparent hover:bg-gray-800 text-white text-lg font-medium border border-gray-600 px-8 py-3 rounded-md transition duration-300">Connect Games</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">The Gamer Odyssey Platform</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Four revolutionary components that transform how you experience, share, and profit from your gaming journey.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1: Gaming DNA -->
+                <div class="feature-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="w-16 h-16 bg-purple-900 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Living Gaming DNA</h3>
+                    <p class="text-gray-400 mb-4">Your gameplay patterns visualized as an evolving digital identity that grows with every session.</p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                        Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Feature 2: Questing -->
+                <div class="feature-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="w-16 h-16 bg-blue-900 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Personalized Questing</h3>
+                    <p class="text-gray-400 mb-4">AI-matched challenges based on your unique skill profile, designed for optimal engagement.</p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                        Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Feature 3: Skill Economy -->
+                <div class="feature-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="w-16 h-16 bg-green-900 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Skill Economy</h3>
+                    <p class="text-gray-400 mb-4">Marketplace connecting your abilities with real opportunities from game developers and studios.</p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                        Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Feature 4: Community -->
+                <div class="feature-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="w-16 h-16 bg-amber-900 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Community Evolution</h3>
+                    <p class="text-gray-400 mb-4">Guilds, governance, and growth driven by player reputation and contributions to the ecosystem.</p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                        Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Showcase -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Popular Games</h2>
+                <a href="games.html" class="text-purple-400 hover:text-purple-300 flex items-center">
+                    View all games
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Game 1 -->
+                <div class="game-card rounded-xl overflow-hidden">
+                    <img src="/api/placeholder/300/180" alt="Game 1" class="w-full h-48 object-cover">
+                    <div class="p-4 bg-gray-800">
+                        <h3 class="text-lg font-bold text-white mb-1">Apex Legends</h3>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-gray-400 text-sm">Battle Royale</span>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-gray-300 text-sm ml-1">4.8</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">Connected</span>
+                            <button class="text-xs bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded transition duration-300">View DNA</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game 2 -->
+                <div class="game-card rounded-xl overflow-hidden">
+                    <img src="/api/placeholder/300/180" alt="Game 2" class="w-full h-48 object-cover">
+                    <div class="p-4 bg-gray-800">
+                        <h3 class="text-lg font-bold text-white mb-1">Valorant</h3>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-gray-400 text-sm">Tactical FPS</span>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-gray-300 text-sm ml-1">4.7</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">Connected</span>
+                            <button class="text-xs bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded transition duration-300">View DNA</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game 3 -->
+                <div class="game-card rounded-xl overflow-hidden">
+                    <img src="/api/placeholder/300/180" alt="Game 3" class="w-full h-48 object-cover">
+                    <div class="p-4 bg-gray-800">
+                        <h3 class="text-lg font-bold text-white mb-1">League of Legends</h3>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-gray-400 text-sm">MOBA</span>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-gray-300 text-sm ml-1">4.6</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">Connected</span>
+                            <button class="text-xs bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded transition duration-300">View DNA</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game 4 -->
+                <div class="game-card rounded-xl overflow-hidden">
+                    <img src="/api/placeholder/300/180" alt="Game 4" class="w-full h-48 object-cover">
+                    <div class="p-4 bg-gray-800">
+                        <h3 class="text-lg font-bold text-white mb-1">Fortnite</h3>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-gray-400 text-sm">Battle Royale</span>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-gray-300 text-sm ml-1">4.5</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="text-xs bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded transition duration-300">Connect</button>
+                            <button class="text-xs bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded transition duration-300 opacity-50" disabled>View DNA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gaming DNA Showcase -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Your Gaming DNA</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Watch your gaming identity evolve in real-time, revealing skills and patterns you never knew you had.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-8">
+                <div class="lg:w-1/2">
+                    <div class="relative h-96 bg-gray-800 rounded-xl overflow-hidden">
+                        <!-- DNA Visualization Placeholder -->
+                        <svg viewBox="0 0 800 600" class="w-full h-full">
+                            <!-- Base DNA Structure -->
+                            <path d="M400,100 Q550,300 400,500" stroke="#4c1d95" stroke-width="2" fill="none"/>
+                            <path d="M400,100 Q250,300 400,500" stroke="#4c1d95" stroke-width="2" fill="none"/>
+                            
+                            <!-- DNA Connectors - Strategic Skills (Purple) -->
+                            <line x1="400" y1="150" x2="500" y2="150" stroke="#8b5cf6" stroke-width="10" stroke-linecap="round" />
+                            <line x1="400" y1="200" x2="300" y2="200" stroke="#8b5cf6" stroke-width="15" stroke-linecap="round" />
+                            <line x1="400" y1="250" x2="520" y2="250" stroke="#8b5cf6" stroke-width="18" stroke-linecap="round" />
+                            <line x1="400" y1="300" x2="280" y2="300" stroke="#8b5cf6" stroke-width="12" stroke-linecap="round" />
+                            <line x1="400" y1="350" x2="530" y2="350" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round" />
+                            <line x1="400" y1="400" x2="270" y2="400" stroke="#8b5cf6" stroke-width="14" stroke-linecap="round" />
+                            <line x1="400" y1="450" x2="510" y2="450" stroke="#8b5cf6" stroke-width="16" stroke-linecap="round" />
+                            
+                            <!-- DNA Connectors - Reaction Skills (Green) -->
+                            <line x1="400" y1="175" x2="510" y2="175" stroke="#10b981" stroke-width="14" stroke-linecap="round" />
+                            <line x1="400" y1="225" x2="290" y2="225" stroke="#10b981" stroke-width="9" stroke-linecap="round" />
+                            <line x1="400" y1="275" x2="515" y2="275" stroke="#10b981" stroke-width="16" stroke-linecap="round" />
+                            <line x1="400" y1="325" x2="285" y2="325" stroke="#10b981" stroke-width="18" stroke-linecap="round" />
+                            <line x1="400" y1="375" x2="520" y2="375" stroke="#10b981" stroke-width="12" stroke-linecap="round" />
+                            <line x1="400" y1="425" x2="280" y2="425" stroke="#10b981" stroke-width="10" stroke-linecap="round" />
+                            
+                            <!-- Recently Evolved Skills -->
+                            <circle cx="520" cy="250" r="12" fill="none" stroke="#f472b6" stroke-width="2">
+                                <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="285" cy="325" r="12" fill="none" stroke="#f472b6" stroke-width="2">
+                                <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            
+                            <!-- Text Labels -->
+                            <text x="540" y="150" fill="#f8fafc" font-size="14" text-anchor="start">Strategy</text>
+                            <text x="540" y="250" fill="#f8fafc" font-size="14" text-anchor="start">Leadership (+7%)</text>
+                            <text x="260" y="325" fill="#f8fafc" font-size="14" text-anchor="end">Reaction Time (+12%)</text>
+                            <text x="250" y="400" fill="#f8fafc" font-size="14" text-anchor="end">Teamwork</text>
+                        </svg>
+                        
+                        <div class="absolute bottom-4 right-4 flex space-x-2">
+                            <button class="bg-gray-700 bg-opacity-80 text-white text-xs px-3 py-1.5 rounded-md">
+                                <i class="fas fa-expand-arrows-alt mr-1"></i> Expand
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-white mb-4">More Than Just a Profile</h3>
+                    <p class="text-gray-300 mb-6">Your Gaming DNA isn't just a static representation—it's a living, evolving digital identity that reflects your unique gaming journey.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-purple-900 rounded-lg flex items-center justify-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-1">Verified on Blockchain</h4>
+                                <p class="text-gray-400">All your skills are securely verified on the Aptos blockchain, creating immutable proof of your gaming abilities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-1">Daily Evolution</h4>
+                                <p class="text-gray-400">Watch your profile evolve each day based on your gameplay, creating a compelling reason to return daily.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-900 rounded-lg flex items-center justify-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-1">Monetize Your Skills</h4>
+                                <p class="text-gray-400">Convert your gaming prowess into real opportunities, from paid beta testing to tournament invitations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md text-lg font-medium transition duration-300">Explore Your DNA</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">What Gamers Are Saying</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Discover how KGeN Odyssey is transforming gaming experiences around the world.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-700 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">SK</div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">Sarah K.</h4>
+                            <p class="text-gray-400 text-sm">Competitive FPS Player</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"I never realized how high my reaction time skills were until I saw them in my Gaming DNA. Within a week, I received three tournament invitations based on my profile!"</p>
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">JT</div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">Jason T.</h4>
+                            <p class="text-gray-400 text-sm">Strategy Game Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The personalized quests are incredible. They're perfectly matched to my skill level. I earned $120 last month testing a new strategy game that matched my DNA profile!"</p>
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">ML</div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">Min-ji L.</h4>
+                            <p class="text-gray-400 text-sm">Guild Leader</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Our guild has grown exponentially since joining KGeN Odyssey. The territory control system creates real competition, and our members love seeing their skills grow each day."</p>
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-purple-900 to-indigo-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Begin Your Odyssey?</h2>
+            <p class="text-xl text-purple-200 mb-8 max-w-3xl mx-auto">Join millions of gamers who are discovering their unique Gaming DNA, earning rewards, and connecting with a global community.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-purple-900 hover:bg-gray-100 text-lg font-medium px-8 py-3 rounded-md transition duration-300">Get Started Now</button>
+                <button class="bg-transparent hover:bg-purple-800 text-white text-lg font-medium border border-white px-8 py-3 rounded-md transition duration-300">Watch Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <!-- Logo and Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-10 w-10 text-purple-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="ml-3">
+                            <span class="text-white text-xl font-bold">KGeN</span>
+                            <span class="text-purple-400 text-xl font-bold">Odyssey</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 mb-4">The ultimate gaming identity and opportunity platform, powered by Aptos blockchain.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-discord text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Navigation Columns -->
+                <div>
+                    <h4 class="text-white font-medium text-lg mb-4">Platform</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Gaming DNA</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Quests</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Skill Marketplace</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Guild System</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Governance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-medium text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Getting Started</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Developer API</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blockchain Verification</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-medium text-lg mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 KGeN Odyssey. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
